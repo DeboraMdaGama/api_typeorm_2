@@ -34,7 +34,7 @@ router.get("/channels", async (request: Request, response: Response) =>{
     response.json(await getRepository(Channel).find());
 });
 router.get("/videos", async (request: Request, response: Response) =>{
-    response.json(await getRepository(Video).find());
+    response.json(await getRepository(Video).find({relations:["tags"]}));
 });
 
 export { router };

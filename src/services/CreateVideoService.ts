@@ -1,5 +1,6 @@
 import { getCustomRepository } from "typeorm";
 import { VideoRepositories } from "../respositories/VideoRepositories";
+import { TagRepositories } from "../respositories/TagRepositories";
 import {validate} from "class-validator";
 import { Channel } from "../entities/Channel";
 import { Tag } from "../entities/Tag";
